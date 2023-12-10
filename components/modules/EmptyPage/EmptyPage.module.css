@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #393939;
+    border-radius: 50%;
+    padding: 20px;
+    position: relative;
+}
+.close svg {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.title {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: THICCCBOI, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    padding-bottom: 8px;
+    margin-top: 24px;
+}
+.descr {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: THICCCBOI, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 32px;
+}

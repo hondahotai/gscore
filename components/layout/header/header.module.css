@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding-bottom: 32px;
+}
+
+.text {
+    color: white;
+}
+.text:active {
+    color: white;
+}
+
+@media (max-width: 576px) {
+
+}

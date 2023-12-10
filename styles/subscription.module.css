@@ -1,0 +1,42 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 620px;
+}
+
+.title {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: THICCCBOI, sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+}
+
+.subtitle {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: THICCCBOI, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 16px 0 48px 0;
+}
+.subscription__btn {
+    margin-top: 48px;
+    width: 100%;
+}
+@media (max-width: 576px) {
+    .wrapper {
+        width: 100% ;
+    }
+    .subscription__btn {
+        background-color: #FC5842;
+        color: white;
+    }
+}

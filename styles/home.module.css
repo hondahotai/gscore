@@ -1,0 +1,41 @@
+.title {
+    color: white;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-family: THICCCBOI, sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 98px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    color:  #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: THICCCBOI, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+}
+.link {
+    color: #FC5842;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: THICCCBOI, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    text-decoration-line: underline;
+    text-align: center;
+}
+.home {
+    text-align: center;
+}

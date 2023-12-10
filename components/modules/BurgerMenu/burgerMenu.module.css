@@ -1,0 +1,112 @@
+.burger {
+    display: none;
+}
+.burger__btn {
+    cursor: pointer;
+    z-index: 100;
+}
+
+@media (max-width: 576px) {
+    .burger {
+        display: flex;
+        align-self: baseline;
+        z-index: 20;
+        top: 0;
+        bottom: 0;
+    }
+    .sidemenu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100%;
+        background-color: #272727;
+        transition: right 0.3s ease;
+        z-index: 100;
+        padding: 32px 34px 0 24px;
+    }
+    .sidemenuActive {
+        right: 0;
+    }
+    .heading {
+        display: flex;
+        gap: 32px;
+        align-items: last baseline;
+        justify-content: center;
+    }
+    .title {
+        display: flex;
+        justify-content: flex-start;
+        color: #FFF;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: THICCCBOI, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+    }
+    .divider {
+        width: 212px;
+        height: 1px;
+        background: #393939;
+        margin: 20px 0;
+    }
+    .menu__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+    .menu__list p {
+        color:  #FFF;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: THICCCBOI, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+    }
+    .chevron__icon {
+        margin-top: -3px;
+    }
+    .active {
+        transform: rotate(-180deg);
+        transition: 0.3s all;
+    }
+    .navbar {
+        list-style-type: none;
+        color: #969696;
+        text-align: start;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: THICCCBOI, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        padding: 32px 0 21px 0;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .navbar__item:first-child {
+        margin-bottom: 32px;
+    }
+    .navbar__item {
+        gap: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .navbar__item:visited:active{
+        color: white;
+        text-decoration: none;
+    }
+    .settings__link {
+        color: #969696;
+        text-decoration: none;
+    }
+}
+

@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+    padding-bottom: 64px;
+}
+
+.divider {
+    width: 195px;
+    height: 8px;
+    background: #393939;
+    margin-top: 20px;
+}
+.divider.active {
+    background: #FC5842;
+}
+
+.inner {
+    width: 195px;
+    height: 42px;
+}
+
+.text {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: THICCCBOI, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+}
+@media (max-width: 576px) {
+    .inner {
+        width: 100%;
+    }
+    .divider {
+        width: 100%;
+    }
+    .text {
+        font-size: inherit ;
+        font-weight: inherit;
+    }
+}

@@ -1,0 +1,20 @@
+.personal__btn {
+    width: 160px;
+}
+.title {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: THICCCBOI, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 48px 0 24px 0;
+}
+@media (max-width: 576px) {
+    .personal__btn {
+        width: 90vw;
+        background-color: #FC5842;
+        color: white;
+    }
+}

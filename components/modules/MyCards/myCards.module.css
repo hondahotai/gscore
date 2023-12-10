@@ -1,0 +1,102 @@
+.container {
+    width: 620px;
+    height: 334px;
+    border-radius: 12px;
+    background:  #393939;
+    box-shadow: 0 24px 65px 0 rgba(0, 0, 0, 0.12);
+    padding: 48px 64px 48px 32px;
+    margin-right: 28px;
+}
+.container.active {
+    background: #4e4b4b;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: THICCCBOI, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.divider {
+    background: #969696;
+    width: 100%;
+    height: 1px;
+    margin: 32px auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: THICCCBOI, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+.desc {
+    color: #969696;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: THICCCBOI, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    margin: 12px 0 32px 0;
+}
+.title {
+    color: #FFF;
+}
+.status {
+    color: #05C168;
+}
+@media (max-width: 578px) {
+    .container {
+        width: 85vw;
+        height: 100%;
+    }
+    .heading {
+        color:  #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: THICCCBOI, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+    }
+    .info {
+        color:#FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: THICCCBOI, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    .desc {
+        color: #969696;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: THICCCBOI, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+    }
+    .btn_card {
+        border-radius: 4px;
+        background: #FFF;
+        box-shadow: 0 10px 28px 0 rgba(252, 88, 66, 0.20);
+        display: flex;
+        width: 120px;
+        padding: 20px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+    }
+}

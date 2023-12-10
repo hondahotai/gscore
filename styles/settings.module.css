@@ -1,0 +1,54 @@
+.container {
+}
+.title {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: THICCCBOI, sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.tabs {
+    display: flex;
+    background: none;
+    cursor: pointer;
+    color: #393939;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: THICCCBOI, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    border: none;
+    outline: none;
+    margin-top: 48px;
+}
+.tab {
+    margin-right: 20px;
+    color: #393939;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab__active {
+    border-bottom: 3px solid red;
+    z-index: 20;
+    color: #FC5842;
+    background: none;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.divider {
+    border-top: 1px solid #FFF;
+    position: relative;
+    top: -1px;
+}
+
+
