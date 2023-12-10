@@ -125,7 +125,6 @@ export default function Subscriptions() {
     dispatch(
       setSubscribeId(subscriptionList[subCount - 1].codes[0].subscribeId),
     );
-    console.log(subscriptionList[subCount - 1].codes[0].subscribeId);
     router.push("/");
   };
 
