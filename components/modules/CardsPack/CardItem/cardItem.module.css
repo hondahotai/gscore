@@ -50,7 +50,7 @@
 }
 
 .divider {
-    width: 308px;
+    max-width: 308px;
     height: 1px;
     opacity: 0.7;
     background: #FFF;

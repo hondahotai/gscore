@@ -250,7 +250,8 @@
     }
     .card__wrapper {
         display: flex;
-        width: 100px;
+        width: 100%;
+        overflow-x: hidden;
     }
     .accordion__activate {
         top: 0;

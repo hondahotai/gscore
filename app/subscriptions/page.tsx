@@ -57,6 +57,15 @@ export default function Subscriptions() {
     centerMode: false,
     variableWidth: true,
     afterChange: (current: number) => setSubCount(current + 1),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const sliderRef = useRef<any>(null);
