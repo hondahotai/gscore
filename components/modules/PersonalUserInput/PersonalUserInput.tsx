@@ -7,7 +7,9 @@ import s from "../PersonalUserInput/PersonalUserInput.module.css";
 import endpoints from "@/services/endpoints";
 import { useDispatch } from "react-redux";
 import { setUserName } from "@/state/ducks/user/slice";
-import { IUpdatePersonalData } from "@/services/types";
+import { IGetUserInfo, IUpdatePersonalData } from "@/services/types";
+import { useEffect } from "react";
+import { emailRegex } from "@/variables/emailValidation";
 
 export const PersonalUserInput = () => {
   const {
@@ -17,22 +19,36 @@ export const PersonalUserInput = () => {
     reset,
   } = useForm<IUpdatePersonalData>();
 
+  const getUserInfo = async () => {
+    try {
+      const { data } = await endpoints.getUserInfo();
+      reset({
+        username: data.username,
+        email: data.email,
+      });
+    } catch (e: any) {
+      console.log(e);
+    }
+  };
+
   const dispatch = useDispatch();
 
   const onSubmit: SubmitHandler<IUpdatePersonalData> = async (data) => {
-    await endpoints
-      .updatePersonalData({
+    try {
+      await endpoints.updatePersonalData({
         username: data.username,
         email: data.email,
-      })
-      .then(() => {
-        dispatch(setUserName(data.username));
-        reset();
-      })
-      .catch((error) => {
-        console.log(error);
       });
+      dispatch(setUserName(data.username));
+      reset(data);
+    } catch (error: any) {
+      console.log(error);
+    }
   };
+
+  useEffect(() => {
+    getUserInfo();
+  }, []);
 
   return (
     <div>
@@ -54,8 +70,7 @@ export const PersonalUserInput = () => {
           {...register("email", {
             required: true,
             pattern: {
-              value:
-                /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu,
+              value: emailRegex,
               message: "Invalid email address",
             },
           })}

@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { Header } from "@/components/layout/header/Header";
 import { Footer } from "@/components/layout/footer/Footer";
 import { Providers } from "@/state/Provider";
+import Head from "next/head";
 
 const myFont = localFont({
   src: [
@@ -37,6 +38,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={myFont.className}>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <body>
         <Providers>
           <Header />

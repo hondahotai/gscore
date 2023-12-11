@@ -19,22 +19,20 @@ export const PasswordUserInput = () => {
   } = useForm<IFormPassword>();
 
   const onSubmit: SubmitHandler<IFormPassword> = async (data) => {
-    await endpoints
-      .updatePassword({
+    try {
+      await endpoints.updatePassword({
         currentPassword: data.currentPassword,
         newPassword: data.newPassword,
-      })
-      .then(() => {
-        reset();
-      })
-      .catch((e: any) => {
-        if (e.response && e.response.status === 400) {
-          setError("newPassword", {
-            type: "manual",
-            message: e.response.data.message,
-          });
-        }
       });
+      reset();
+    } catch (e: any) {
+      if (e.response && e.response.status === 400) {
+        setError("newPassword", {
+          type: "manual",
+          message: e.response.data.message,
+        });
+      }
+    }
   };
 
   return (

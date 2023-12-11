@@ -82,8 +82,9 @@ export default function Subscriptions() {
       const { data } = await endpoints.activateCode({ code });
       setSubscriptionList((currentList) => {
         const newList = [...currentList];
-        newList[subCount - 1].codes = newList[subCount - 1].codes.map((c, i) =>
-          i === index ? { ...c, ...data } : c,
+        newList[subCount - 1].codes = newList[subCount - 1].codes.map(
+          (codeItem, codeIndex) =>
+            codeIndex === index ? { ...codeItem, ...data } : codeItem,
         );
         return newList;
       });

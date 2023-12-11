@@ -1,3 +1,5 @@
+import { string } from "prop-types";
+
 export type ISignUp = {
   email: string;
   username: string;
@@ -79,4 +81,10 @@ export type IUpdatePersonalData = {
 export type IUpdatePassword = {
   currentPassword: string;
   newPassword: string;
+};
+
+export type IGetUserInfo = {
+  id: number;
+  email: string;
+  username: string;
 };

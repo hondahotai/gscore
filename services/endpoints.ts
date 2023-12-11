@@ -3,6 +3,7 @@ import {
   IActivateCode,
   IChangeProduct,
   ICodeManage,
+  IGetUserInfo,
   ISelfSubscriptions,
   ISignIn,
   ISignUp,
@@ -26,6 +27,7 @@ const endpoints = {
     axios.patch<IUpdatePersonalData>("/users", data),
   updatePassword: (data: IUpdatePassword) =>
     axios.patch<IUpdatePassword>("/users/update-password", data),
+  getUserInfo: () => axios.get<IGetUserInfo>("users/me"),
 };
 
 export default endpoints;
