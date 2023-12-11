@@ -4,7 +4,7 @@
     margin: 0 auto;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 620px;
+    max-width: 620px;
 }
 
 .title {
@@ -87,7 +87,7 @@
 }
 
 .checkout__btn {
-    width: 200px;
+    min-width: 200px;
 }
 .error__text {
     color: brown;

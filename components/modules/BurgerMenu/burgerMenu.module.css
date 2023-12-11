@@ -48,7 +48,7 @@
         line-height: 18px;
     }
     .divider {
-        width: 212px;
+        max-width: 212px;
         height: 1px;
         background: #393939;
         margin: 20px 0;

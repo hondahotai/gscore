@@ -1,5 +1,5 @@
 .container {
-    width: 620px;
+    max-width: 620px;
     height: 334px;
     border-radius: 12px;
     background:  #393939;
@@ -93,7 +93,7 @@
         background: #FFF;
         box-shadow: 0 10px 28px 0 rgba(252, 88, 66, 0.20);
         display: flex;
-        width: 120px;
+        max-width: 120px;
         padding: 20px 24px;
         justify-content: center;
         align-items: center;

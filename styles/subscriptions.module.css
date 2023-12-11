@@ -54,6 +54,8 @@
     background:  #272727;
     padding: 24px 91px 32px 32px;
     margin-top: 32px;
+    width: 100%;
+
 }
 .accordion__text {
     color: #969696;
@@ -63,6 +65,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 18px;
+    width: 100%;
 }
 
 .copy__btn {
@@ -79,9 +82,10 @@
     justify-content: space-between;
     align-items: center;
     height: 68px;
+    margin-right: 28px;
 }
 .accordion__info_wide {
-    width: 620px;
+    max-width: 620px;
     background:  #393939;
     border-radius: 6px;
     box-shadow: 0 2px 12px 0 rgba(20, 20, 43, 0.06);
